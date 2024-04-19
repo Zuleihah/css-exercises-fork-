@@ -8,7 +8,8 @@ body {
   font-weight: 800;
 }
 
-.small-para {
+/* the font-size of element 2 did not reduce previously because the css styling below had the samespecificity. Adding multiple classes(chaining selectors) increased its rank or it can be moved below the .para styling */
+.para.small-para {
   font-size: 14px;
   font-weight: 800;
 }
@@ -17,7 +18,9 @@ body {
   font-size: 22px;
 }
 
-.confirm {
+
+/* style did not work because element below had same rank. fixed by changing selector to id selector. other ways to solve could be adding more selector (.confirm.button) or (#confirm-button.confirm) another option is moving it below the .button styling*/
+#confirm-button {
   background: green;
   color: white;
   font-weight: bold;
@@ -29,7 +32,11 @@ body {
   font-size: 20px;
 }
 
-.child {
+
+
+
+/* problem: below styling has higher specificity---other solutuion:- (div).text.child; (div).text child; (div).text>..child  OR removing div from styling below then moving above the .child styling OR remove div from style below then add div to.child style */
+.text .child {
   color: rgb(0, 0, 0);
   font-weight: 800;
   font-size: 14px;
