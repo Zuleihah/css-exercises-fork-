@@ -1,0 +1,14 @@
+.oddNo{
+    background-color: hsl(351, 100%, 86%);
+    font-family: 'Verdana', 'DejaVu Sans', sans-serif;
+}
+#no2{
+    color: #0000ff;
+    font-size: 36px;
+}
+.oddNo.no3{font-size:24px;}
+#no4{
+    background-color: rgb(144, 238, 144);
+    font-size:24px;
+    font-weight: bold;
+}
