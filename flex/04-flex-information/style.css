@@ -1,5 +1,6 @@
 body {
   font-family: 'Courier New', Courier, monospace;
+  text-align:center;
 }
 
 img {
@@ -11,7 +12,21 @@ img {
   font-size: 36px;
   font-weight: 900;
 }
-
+article{
+  padding-top:32px;
+  display:flex;
+  gap:52px;
+  justify-content: center;
+}
+.element{
+  /* 
+  Had all these in solution before checking actual solution. unnecesary
+  display:flex;
+  flex-flow: row wrap ;
+  justify-content: center;
+  align-content: baseline; */
+  flex-basis:200px;
+}
 /* do not edit this footer */
 .footer {
   position: fixed;
